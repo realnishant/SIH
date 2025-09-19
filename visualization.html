@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine-X | Visualization</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="sih.png" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🐋 Marine-X</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+     
+      <li><a href="visualization.html" class="active">Visualization</a></li>
+      <li><a href="map.html">Species Map</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Title -->
+  <section class="page-header">
+    <h1>Marine Data Visualization</h1>
+    <p>Explore trends in biodiversity, fish abundance, and ocean health.</p>
+  </section>
+
+  <!-- Charts Section -->
+  <section class="charts">
+    <div class="chart-card">
+      <h3>Species Distribution</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Fish Abundance in Regions</h3>
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Ocean Temperature Trends</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Marine-X | Visualization powered by Chart.js</p>
+  </footer>
+
+  <!-- Chart Scripts -->
+  <script>
+    // Pie Chart - Species Distribution
+    new Chart(document.getElementById("pieChart"), {
+      type: 'pie',
+      data: {
+        labels: ["Tuna", "Sardine", "Mackerel", "Anchovy", "Others"],
+        datasets: [{
+          data: [30, 20, 25, 15, 10],
+          backgroundColor: ["#ffcc00", "#00bcd4", "#4caf50", "#ff5722", "#9c27b0"]
+        }]
+      }
+    });
+
+    // Bar Chart - Fish Abundance
+    new Chart(document.getElementById("barChart"), {
+      type: 'bar',
+      data: {
+        labels: ["Bay of Bengal", "Arabian Sea", "Indian Ocean"],
+        datasets: [{
+          label: "Fish Abundance (tons)",
+          data: [120, 90, 150],
+          backgroundColor: "rgba(0, 102, 204, 0.7)"
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+
+    // Line Chart - Ocean Temperature
+    new Chart(document.getElementById("lineChart"), {
+      type: 'line',
+      data: {
+        labels: ["2018", "2019", "2020", "2021", "2022"],
+        datasets: [{
+          label: "Temperature (°C)",
+          data: [26, 26.5, 27, 27.8, 28],
+          borderColor: "#ff5722",
+          fill: false,
+          tension: 0.3
+        }]
+      }
+    });
+  </script>
+</body>
+</html>

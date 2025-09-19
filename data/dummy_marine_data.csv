@@ -1,0 +1,31 @@
+individual_count,sex,habitat,water_body,country,locality,min_depth,latitude,longitude,scientific_name,common_name
+38,Unknown,Mangrove,Atlantic Ocean,South Africa,Florida Keys,361.5,-58.3354,46.252,Carcharodon carcharias,Hammerhead Shark
+5,Male,Open Ocean,Mediterranean Sea,Canada,Great Barrier Reef,409.4,13.4916,72.9997,Thunnus albacares,Green Sea Turtle
+26,Unknown,Open Ocean,Pacific Ocean,Brazil,Cape Town Harbor,28.2,87.4413,132.6566,Orcinus orca,Green Sea Turtle
+10,Unknown,Coral Reef,Pacific Ocean,Brazil,Great Barrier Reef,112.2,-75.5016,79.4677,Sphyrna lewini,Hammerhead Shark
+20,Male,Estuary,Mediterranean Sea,Brazil,Tokyo Bay,78.7,83.025,69.9262,Delphinus delphis,Orca
+26,Unknown,Mangrove,Mediterranean Sea,India,Florida Keys,175.0,-44.3587,135.2365,Carcharodon carcharias,Orca
+1,Unknown,Coral Reef,Mediterranean Sea,India,Florida Keys,100.7,16.916,97.8182,Clownfish amphiprion,Great White Shark
+16,Male,Mangrove,Arctic Ocean,Australia,Cape Town Harbor,152.5,0.5059,41.2264,Orcinus orca,Green Sea Turtle
+19,Female,Coral Reef,Pacific Ocean,Japan,Great Barrier Reef,401.5,82.5442,-69.1493,Carcharodon carcharias,Orca
+36,Unknown,Open Ocean,Mediterranean Sea,Brazil,Amazon Delta,209.9,46.717,-74.8592,Gadus morhua,Yellowfin Tuna
+47,Male,Coral Reef,Arctic Ocean,Canada,Florida Keys,213.5,-36.0908,-85.8444,Thunnus albacares,Clownfish
+39,Male,Coral Reef,Pacific Ocean,India,Florida Keys,470.1,-28.2754,-106.7109,Sphyrna lewini,Green Sea Turtle
+1,Male,Deep Sea,Pacific Ocean,Japan,Tokyo Bay,15.6,1.5155,59.0506,Orcinus orca,Common Dolphin
+15,Male,Open Ocean,Atlantic Ocean,India,Tokyo Bay,457.4,-61.801,21.3645,Clownfish amphiprion,Great White Shark
+29,Unknown,Coral Reef,Arctic Ocean,Australia,Cape Town Harbor,347.2,81.9471,-107.5062,Gadus morhua,Common Dolphin
+47,Unknown,Estuary,Pacific Ocean,USA,Great Barrier Reef,87.2,-65.6052,-70.5576,Chelonia mydas,Great White Shark
+50,Male,Open Ocean,Mediterranean Sea,Canada,Great Barrier Reef,287.1,-34.438,-157.8999,Carcharodon carcharias,Great White Shark
+44,Unknown,Estuary,Arctic Ocean,Australia,Goa Coast,143.3,-25.6141,48.4314,Delphinus delphis,Yellowfin Tuna
+48,Unknown,Deep Sea,Arctic Ocean,Brazil,Great Barrier Reef,462.7,-47.1933,-56.9198,Sphyrna lewini,Clownfish
+42,Male,Open Ocean,Atlantic Ocean,Canada,Florida Keys,281.5,-35.0588,131.3669,Thunnus albacares,Atlantic Cod
+24,Male,Deep Sea,Indian Ocean,South Africa,Tokyo Bay,275.1,-66.2247,29.7112,Delphinus delphis,Great White Shark
+36,Unknown,Mangrove,Mediterranean Sea,Canada,Tokyo Bay,357.3,-46.3596,156.9743,Thunnus albacares,Yellowfin Tuna
+10,Unknown,Mangrove,Atlantic Ocean,Australia,Tokyo Bay,73.7,28.5084,-54.5426,Orcinus orca,Clownfish
+42,Female,Open Ocean,Mediterranean Sea,Japan,Goa Coast,350.7,14.0183,-3.4316,Thunnus albacares,Clownfish
+41,Unknown,Mangrove,Pacific Ocean,Australia,Florida Keys,87.7,30.5853,-157.1094,Clownfish amphiprion,Common Dolphin
+42,Unknown,Open Ocean,Indian Ocean,Canada,Goa Coast,179.4,82.2008,88.5328,Delphinus delphis,Common Dolphin
+43,Unknown,Coral Reef,Arctic Ocean,Brazil,Florida Keys,213.1,57.5648,-18.0163,Carcharodon carcharias,Atlantic Cod
+27,Female,Open Ocean,Atlantic Ocean,Brazil,Goa Coast,451.7,-4.5152,-74.9784,Chelonia mydas,Clownfish
+17,Male,Deep Sea,Arctic Ocean,South Africa,Florida Keys,28.5,-83.7622,163.1297,Clownfish amphiprion,Atlantic Cod
+47,Male,Estuary,Atlantic Ocean,USA,Tokyo Bay,349.1,-51.5599,95.0393,Chelonia mydas,Great White Shark
