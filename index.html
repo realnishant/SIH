@@ -1,52 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marine-X | Home</title>
-  <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="sih.png" />
+
+  <!-- fontawesome CDN for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- site css -->
+  <link rel="stylesheet" href="style.css" />
+   <link rel="icon" type="image/png" href="assets/sih.png" />
 </head>
+
 <body>
+
+  <!-- video background (put your file as bg.mp4 in project root) -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="assets/bg-video.mp4" type="video/mp4">
+    <!-- fallback image -->
+  </video>
+
+  <!-- subtle overlay to darken the video -->
+  <!-- <div class="video-overlay"></div> -->
+
+  <!-- bubbles / particles (optional) -->
+  <div class="bubbles" aria-hidden="true">
+    <div class="bubble" style="left:6%; width:16px; height:16px; animation-duration:12s"></div>
+    <div class="bubble" style="left:18%; width:24px; height:24px; animation-duration:16s"></div>
+    <div class="bubble" style="left:35%; width:20px; height:20px; animation-duration:18s"></div>
+    <div class="bubble" style="left:52%; width:30px; height:30px; animation-duration:20s"></div>
+    <div class="bubble" style="left:72%; width:14px; height:14px; animation-duration:14s"></div>
+    <div class="bubble" style="left:88%; width:36px; height:36px; animation-duration:22s"></div>
+  </div>
+
   <!-- Navbar -->
   <header class="navbar">
-  <div class="logo">🐋 Marine-X</div>
+    <div class="nav-left">
+      <div class="logo" href="index.html">🐋 <span class="brand">Marine-X</span></div>
+    </div>
 
-  <!-- Hamburger Button (Mobile only) -->
-  <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <!-- hamburger for mobile -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
 
-  <nav>
-    <ul class="nav-links">
+    <!-- nav links -->
+    <nav id="mainNav" class="nav-links" role="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="visualization.html">Visualization</a></li>
+
+        <li><a href="taxonomy.html">Taxonomy</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="fade">Explore the Depths with Marine-X</h1>
+      <p class="lead fade delayed">Integrated marine data, maps, and visualizations for researchers.</p>
+
+      <div class="hero-cta fade delayed-2">
+        <a class="btn primary" href="visualization.html">Explore Visualizations</a>
+        <a class="btn ghost" href="map.html">Open Species Map</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <section class="stats">
+    <div class="stat fade">
+      <div class="num" data-target="500">0</div>
+      <p>Species Records</p>
+    </div>
+    <div class="stat fade delayed">
+      <div class="num" data-target="128">0</div>
+      <p>Surveys</p>
+    </div>
+    <div class="stat fade delayed-2">
+      <div class="num" data-target="20">0</div>
+      <p>Active Areas</p>
+    </div>
+  </section>
+
+  <!-- Features (3 video cards instead of images) -->
+  <section class="features">
+    <h2 class="section-title fade">Key Modules</h2>
+
+    <div class="feature-grid">
+      <!-- each card shows a short playable loop (use small mp4s or same bg.mp4 with poster attribute to save bandwidth) -->
+      <article class="feature-card fade">
+        <div class="card-media">
+          <!-- <video muted loop playsinline preload="metadata" poster="poster-ocean-1.jpg" class="card-video">
+            <source src="oceanography.jpeg" type="image/jpeg">
+          </video> -->
+          <img src="assets/oceanography.jpeg" alt="" srcset="">
+        </div>
+        <h3>Oceanography Data</h3>
+        <p>Dive into temperature, salinity and current patterns over time.</p>
+        <a class="small-btn" href="visualization.html">Explore Oceanography →</a>
+      </article>
+
+      <article class="feature-card fade delayed">
+        <div class="card-media">
+          <!-- <video muted loop playsinline preload="metadata" poster="poster-ocean-2.jpg" class="card-video">
+            <source src="bg.mp4" type="video/mp4">
+          </video> -->
+          <img src="assets/taxonomy.jpg" alt="" srcset="">
+        </div>
+        <h3>Taxonomy & eDNA</h3>
+        <p>Species detection using eDNA and taxonomic classification tools.</p>
+        <a class="small-btn" href="taxonomy.html">Explore Taxonomy →</a>
+      </article>
+
+      <article class="feature-card fade delayed-2">
+        <div class="card-media">
+          <!-- <video muted loop playsinline preload="metadata" poster="poster-ocean-3.jpg" class="card-video">
+            <source src="bg.mp4" type="video/mp4">
+          </video> -->
+          <img src="assets/insights.jpeg" alt="" srcset="">
+        </div>
+        <h3>Integrated Insights</h3>
+        <p>Correlate ocean parameters with biodiversity and fisheries trends.</p>
+        <a class="small-btn" href="visualization.html">Explore Insights →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- About CMLRE (placed above footer with shadow + animation) -->
+  <section class="about-cmlre fade big-shadow">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>About CMLRE</h2>
+        <p>
+          The Centre for Marine Living Resources and Ecology (CMLRE), Kochi — under the Ministry of Earth Sciences —
+          coordinates research and monitoring across India's EEZ. Marine-X is a prototype data backbone to integrate
+          oceanographic, taxonomic, morphometric and molecular datasets to support science-driven fisheries and
+          conservation decisions.
+        </p>
+      </div>
+      <div class="about-actions">
+        <!-- <a class="btn primary" href="about.html">Read More</a> -->
+        <a class="btn ghost" href="map.html">Open Map</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave Divider
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 320"><path fill="#00334d" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,117.3C320,117,400,107,480,101.3C560,96,640,96,720,122.7C800,149,880,203,960,208C1040,213,1120,171,1200,144C1280,117,1360,107,1400,101.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+</div> -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">🐋 Marine-X</div>
+      <p>Empowering Marine Ecosystem Insights</p>
+      <!-- <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="visualization.html">Visualization</a></li>
       <li><a href="map.html">Species Maps</a></li>
       <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to Marine-X</h1>
-    <p>A Next-Gen Platform for Marine Ecosystem Insights 🌍🐟</p>
-    <a href="visualization.html" class="btn">Explore Data</a>
-  </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <h2>About CMLRE</h2>
-    <p>
-      CMLRE, Kochi under the Ministry of Earth Sciences, promotes ocean development activities in India.
-      Marine-X integrates data across oceanography, taxonomy, morphology, and molecular biology to
-      empower sustainable fisheries and ecosystem conservation.
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Marine-X | Built for SIH</p>
+    </ul> -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="copy">© 2025 Marine-X | Built for SIH</p>
+    </div>
   </footer>
+
+
+  <!-- scripts -->
   <script src="script.js"></script>
 </body>
+
 </html>

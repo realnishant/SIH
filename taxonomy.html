@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marine-X | Visualization</title>
+  <title>Marine-X | Species Map</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/sih.png" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="icon" type="image/png" href="assets/sih.png" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSvUiXNYcM_PLFus8zreB8LJ3HYG9ksqM"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
-
+  
    <video id="bgVideo" autoplay muted loop playsinline>
     <source src="assets/bg-video.mp4" type="video/mp4">
     <!-- fallback image -->
@@ -32,44 +32,54 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="visualization.html">Visualization</a></li>
-        
+     
         <li><a href="taxonomy.html">Taxonomy</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero with Video  -->
-  <!-- <section class="hero">
-    <video autoplay muted loop playsinline class="bg-video">
-      <source src="bg-video.mp4" type="video/mp4">
-    </video>
-     <div class="hero-content">
-      <h1>Marine Data Visualization</h1>
-      <p>Explore trends in biodiversity, fish abundance, and ocean health 🌍</p>
-    </div> -->
-  <!-- </section> -->
-
-  <!-- Charts Section -->
-  <section class="charts">
-    <div class="chart-card">
-      <h3>Species Distribution</h3>
-      <canvas id="pieChart"></canvas>
-    </div>
-
-    <div class="chart-card">
-      <h3>Fish Abundance in Regions</h3>
-      <canvas id="barChart"></canvas>
-    </div>
-
-    <div class="chart-card">
-      <h3>Ocean Temperature Trends</h3>
-      <canvas id="lineChart"></canvas>
-    </div>
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Marine Species Hotspot Map</h1>
+    <p>Explore key biodiversity hotspots in India's Exclusive Economic Zone (EEZ).  
+    Click on a marker to learn more about species distribution, abundance, and conservation concerns.</p>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <!-- Map Section -->
+  <section class="map-container">
+    <div id="map"></div>
+  </section>
+
+
+  <!-- Table Section -->
+<section id="table-section" class="mb-4">
+  <h3>Species Records (Sample)</h3>
+  <div class="table-responsive">
+    <table class="table table-striped" id="speciesTable">
+      <thead>
+        <tr>
+          <th>Individual Count</th>
+          <th>Sex</th>
+          <th>Habitat</th>
+          <th>Water Body</th>
+          <th>Country</th>
+          <th>Locality</th>
+          <th>Min Depth</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Scientific Name</th>
+          <th>Common Name</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+
+
+<footer class="footer">
   <div class="footer-content">
     <div class="footer-logo">🐋 Marine-X</div>
     <p>Empowering Marine Ecosystem Insights</p>
@@ -88,9 +98,12 @@
   </div>
 </footer>
 
-  <!-- Chart Scripts -->
-  <script src="script.js">
-   
-  </script>
+  <!-- Google Map & CSV Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="script.js">
+
+</script>
+
+
 </body>
 </html>
