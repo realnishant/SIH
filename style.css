@@ -605,6 +605,7 @@ footer {
 /* Map Container */
 .map-container {
   padding: 40px;
+  color: black;
 }
 
 #map {
