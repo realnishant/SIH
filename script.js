@@ -192,7 +192,49 @@ function initMap() {
       abundance: "Fluctuating",
       threat: "Climate Variability",
       info: "Sardine populations are highly sensitive to ocean temperature shifts and monsoon cycles."
-    }
+    },
+     {
+    coords: { lat: 9.5, lng: 76.3 },    // Kerala coast
+    name: "Indian Oil Sardine (Sardinella longiceps)",
+    abundance: "Variable / Seasonal",
+    threat: "Climate variability, overfishing",
+    info: "Key small pelagic for Indian fisheries. Populations fluctuate with sea temperature and upwelling; sensitive to over-extraction and climate-driven changes."
+  },
+  {
+    coords: { lat: 19.0, lng: 72.8 },   // Mumbai / Maharashtra coast
+    name: "Silver Pomfret (Pampus argenteus)",
+    abundance: "Moderate",
+    threat: "Bycatch, habitat degradation",
+    info: "High-value table fish; vulnerable to intensive trawling and coastal pollution reducing juvenile nursery areas."
+  },
+  {
+    coords: { lat: 13.1, lng: 80.3 },   // Chennai / Bay of Bengal
+    name: "Bombay Duck (Harpadon nehereus)",
+    abundance: "Moderate to High (local)",
+    threat: "Trawl pressure, coastal development",
+    info: "Important in regional diets and markets; catches can be locally high but stocks suffer from indiscriminate trawling."
+  },
+  {
+    coords: { lat: 17.7, lng: 83.3 },   // Visakhapatnam / Andhra coast
+    name: "Blue Swimming Crab (Portunus pelagicus)",
+    abundance: "Moderate",
+    threat: "Overharvest, habitat loss (mangroves, estuaries)",
+    info: "Valuable in export and domestic markets. Juveniles rely on estuarine/mangrove habitats that are often degraded by development."
+  },
+  {
+    coords: { lat: 22.6, lng: 88.4 },   // Hooghly / Kolkata region (estuaries)
+    name: "Hilsa (Tenualosa ilisha)",
+    abundance: "Seasonal / Migratory",
+    threat: "Overfishing during migration, river barriers",
+    info: "Anadromous and culturally/economically important in eastern India. Vulnerable during upstream migration; affected by dams and river changes."
+  },
+  {
+    coords: { lat: 8.5, lng: 76.9 },    // Southwest coast, Kerala backwaters/nearshore
+    name: "Giant Tiger Prawn (Penaeus monodon)",
+    abundance: "Decreasing (localized)",
+    threat: "Intensive trawling, habitat loss, disease in farmed stocks",
+    info: "High commercial value; wild stocks can be pressured by heavy fishing and mangrove conversion for aquaculture."
+  }
   ];
 
   speciesData.forEach(species => {
